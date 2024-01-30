@@ -1,0 +1,79 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>saml-telmex</groupId>
+  <artifactId>saml-telmex</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+
+        <dependency>
+            <groupId>org.apache.santuario</groupId>
+            <artifactId>xmlsec</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
+        
+  <!-- JAXB API -->
+  <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.1</version>
+  </dependency>
+
+  <!-- JAXB RI -->
+  <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.3.4</version>
+  </dependency>
+
+
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-geometry-parent</artifactId>
+            <version>1.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+	        <groupId>org.eclipse.persistence</groupId>
+	        <artifactId>org.eclipse.persistence.core</artifactId>
+	        <version>2.7.2</version>
+        </dependency>
+
+        
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        <version>2.5</version>
+</dependency>
+
+        <dependency>
+        	<groupId>com.onelogin</groupId>
+        	<artifactId>java-saml</artifactId>
+        	<version>2.0.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.opensaml</groupId>
+        	<artifactId>opensaml-saml-impl</artifactId>
+        	<version>4.0.1</version>
+        </dependency>
+  </dependencies>
+  <packaging>war</packaging>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
